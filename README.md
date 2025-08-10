@@ -64,3 +64,88 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laravel 11 – WPU
+
+Proyek latihan membuat aplikasi web menggunakan **Laravel 11** sebagai bagian dari materi belajar framework Laravel di WPU.
+
+---
+
+## Fitur
+- Struktur aplikasi Laravel standar  
+- Routing, Controller, dan View dasar  
+- CRUD sederhana dengan database MySQL  
+- Otentikasi pengguna dasar (login dan register)  
+- Middleware untuk proteksi route tertentu  
+- Template menggunakan Blade dan Bootstrap
+
+---
+
+## Teknologi yang Digunakan
+- **Laravel 11** – Framework PHP untuk backend  
+- **PHP** – Bahasa pemrograman utama  
+- **MySQL** – Database relasional  
+- **Composer** – Dependency management PHP  
+- **Bootstrap** – Framework CSS untuk styling dan layout  
+- **Blade** – Template engine bawaan Laravel  
+
+---
+
+## Cara Instalasi dan Menjalankan
+
+1. Clone repository ini:
+    ```bash
+    git clone https://github.com/Irfan2202/laravel11WPU.git
+    cd laravel11WPU
+    ```
+
+2. Install dependencies menggunakan Composer:
+    ```bash
+    composer install
+    ```
+
+3. Salin file `.env.example` menjadi `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+
+4. Generate aplikasi key Laravel:
+    ```bash
+    php artisan key:generate
+    ```
+
+5. Atur konfigurasi database di file `.env` (sesuaikan dengan database lokal kamu):
+    ```
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=nama_database_anda
+    DB_USERNAME=user_database
+    DB_PASSWORD=password_database
+    ```
+
+6. Jalankan migrasi untuk membuat tabel di database:
+    ```bash
+    php artisan migrate
+    ```
+
+7. Jalankan server development Laravel:
+    ```bash
+    php artisan serve
+    ```
+
+8. Buka browser dan akses aplikasi di:
+    ```
+    http://localhost:8000
+    ```
+
+---
+
+## Catatan
+- Pastikan kamu sudah menginstall PHP (versi 8 ke atas), Composer, dan MySQL di komputer kamu.  
+- Untuk kemudahan, kamu bisa menggunakan XAMPP atau Laragon sebagai paket server lokal.
+
+---
+
+Terima kasih telah menggunakan proyek ini. Jika ada pertanyaan atau ingin berkontribusi, silakan buka issue di repository.
+
